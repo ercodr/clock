@@ -15,23 +15,23 @@ setInterval( () => {
 }, 1000);
 
 
-let time = new Date().getHours();
-let greet = document.querySelector('.greet');
+// let time = new Date().getHours();
+// let greet = document.querySelector('.greet');
 
-setInterval( () => {
+// setInterval( () => {
 
-    if(time < 12){
+//     if(time < 12){
 
-        greet.innerHTML = 'Good Morning';
+//         greet.innerHTML = 'Good Morning';
 
-    } else if(time < 17){
+//     } else if(time < 17){
 
-        greet.innerHTML = 'Good Afternoon';
+//         greet.innerHTML = 'Good Afternoon';
 
-    } else{
+//     } else{
 
-        greet.innerHTML = 'Good Evening';
+//         greet.innerHTML = 'Good Evening';
 
-    }
+//     }
 
-}, 1000)
+// }, 1000)
