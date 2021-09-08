@@ -1,3 +1,18 @@
+window.addEventListener('load', () => {
+
+    // CHECKING FOR BROWSER SUPPORT
+    if(!('serviceWorker' in navigator)){
+        console.log('Service Worker no supported');
+        return;
+    }
+
+    navigator.serviceWorker.register('/sw.js')
+    .then(function(regitration) {
+        console.log('SW Registered, Scope is: ', regitration.scope);        
+    });
+
+});
+
 let hr = document.getElementById('hr');
 let min = document.getElementById('min');
 let sec = document.getElementById('sec');
@@ -13,6 +28,8 @@ setInterval( () => {
     sec.innerText = new Date().getSeconds();
 
 }, 1000);
+
+
 
 
 // let time = new Date().getHours();
